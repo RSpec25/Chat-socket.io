@@ -27,6 +27,7 @@ io.on('connection', (socket) => { // when client connects
 
     })
 
+    // msg in room
     socket.on('chat message', (msg) => {
         const user = getCurrentUser(socket.id);
         console.log(user)
